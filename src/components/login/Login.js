@@ -9,7 +9,7 @@ function LoginPage() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
   const authContext = useContext(AuthContext);
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
@@ -27,7 +27,7 @@ function LoginPage() {
       (res) => {
        console.log(res.data);
        authContext.setIsAuthenticated(true);
-       history.push("/dashboard");
+       navigate("/dashboard");
       }
     ).catch((err) => {
       console.log(err);
@@ -39,7 +39,7 @@ function LoginPage() {
     <div>
     <div className="flex items-center justify-center h-screen bg-gray-100">
       <form onSubmit={handleSubmit} className="bg-white p-8 rounded shadow-md">
-        <h2 className="text-xl font-semibold mb-4">Log in to your account</h2>
+        <h2 className="text-xl font-semibold mb-4">Calendar App</h2>
         {error && <p className="text-red-500 mb-4">{error}</p>}
         <div className="mb-4">
           <label className="block text-gray-700 font-semibold mb-2" htmlFor="email">Email</label>
