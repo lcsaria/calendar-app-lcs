@@ -1,0 +1,16 @@
+{
+  "login": [
+    {
+      "email": "guest@email.com",
+      "password": "Pass123",
+      "id": 1
+    }
+  ],
+  "appointments": [
+    {
+      "name": "Lmarl",
+      "date": "1011-10-10",
+      "id": 1
+    }
+  ]
+}
