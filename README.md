@@ -3,16 +3,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Step by Step
 
 In the project directory, you can run:
+Install dependencies
+### npm install
 
-### `npm run start`
-
-Runs the app in the development mode.<br />
+Run Server
+## #npm run start
 Open [http://localhost:8081](http://localhost:8081) to view mock API it in the browser.
 Open [http://localhost:3000](http://localhost:3000) to view the front end in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
 
 API Documentation
 
