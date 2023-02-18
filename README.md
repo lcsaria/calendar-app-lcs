@@ -7,7 +7,7 @@ Install dependencies
 ### npm install
 
 Run Server
-## #npm run start
+### npm run start
 Open [http://localhost:8081](http://localhost:8081) to view mock API it in the browser.
 Open [http://localhost:3000](http://localhost:3000) to view the front end in the browser.
 
