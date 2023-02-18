@@ -8,10 +8,10 @@
   ],
   "appointments": [
     {
-      "name": "Lmarl",
-      "date": "1011-10-10",
-      "id": 1,
-      "status": "Pending"
+      "name": "Calendar 1",
+      "date": "2023-02-28",
+      "status": "Pending",
+      "id": 3
     }
   ]
 }

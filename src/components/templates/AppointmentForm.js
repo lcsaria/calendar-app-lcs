@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { useMutation, useQueryClient } from 'react-query';
 import axios from 'axios';
 
-function AppointmentForm() {
+function AppointmentForm({closeModal}) {
   const [name, setName] = useState('');
   const [date, setDate] = useState('');
   const [status, setStatus] = useState('Pending');
   const queryClient = useQueryClient();
 
   const addAppointmentMutation = useMutation((newAppointment) =>
-    axios.post('localhost:8081/appointments', newAppointment)
+    axios.post('http://localhost:8081/appointments', newAppointment)
   );
 
   const handleSubmit = (e) => {
@@ -23,13 +23,18 @@ function AppointmentForm() {
         setName('');
         setDate('');
         setStatus('Pending');
+        alert("Successfully added")
+        closeModal();
       },
     });
   };
 
   return (
-    <form onSubmit={handleSubmit} className="mt-8">
-      <div className="mb-4">
+    <form onSubmit={handleSubmit} className="mt-8 max-w-sm">
+      <label className="block text-gray-700 font-bold mb-2 text-center" htmlFor="name">
+          Add Appointment
+      </label>
+      <div className="mb-4 max-w-sm">
         <label className="block text-gray-700 font-bold mb-2" htmlFor="name">
           Name
         </label>
@@ -69,7 +74,7 @@ function AppointmentForm() {
       </div>
       <button
         type="submit"
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        className="bg-blue-500 hover:bg-blue-700 shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
       >
         Add Appointment
       </button>

@@ -25,9 +25,14 @@ function LoginPage() {
 
     axios.get("http://localhost:8081/login", login).then(
       (res) => {
-       console.log(res.data);
-       authContext.setIsAuthenticated(true);
-       navigate("/dashboard");
+       let credential = res.data;
+       if (credential[0].email === email && credential[0].password === password){
+        authContext.setIsAuthenticated(true);
+        navigate("/dashboard");
+       } else {
+        setError("Invalid credentials");
+       }
+       
       }
     ).catch((err) => {
       console.log(err);

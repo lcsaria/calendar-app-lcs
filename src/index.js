@@ -4,7 +4,9 @@ import App from './App';
 import "./index.css";
 
 import 'tailwindcss/tailwind.css';
+import Modal from 'react-modal';
 
+Modal.setAppElement('#root');
 ReactDOM.render(
   <React.StrictMode>
     <App />
