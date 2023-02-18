@@ -12,6 +12,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 ### nvm use | install 13.13.0
+
 ## Install dependencies
 ### npm install
 
