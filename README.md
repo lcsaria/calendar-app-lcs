@@ -1,8 +1,9 @@
+| ---------------- | ---------------- |
 | OS | Windows 7 |
 | Laptop Brand | Lenovo G560 |
 |Node.JS Version | v13.13.0 |
 |NPM Version | v6.14.4 |
-
+| ---------------- | ---------------- |
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
