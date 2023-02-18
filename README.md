@@ -11,10 +11,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Step by Step
 
 In the project directory, you can run:
-Install dependencies
+### nvm use | install 13.13.0
+## Install dependencies
 ### npm install
 
-Run Server
+## Run Server
 ### npm run start
 Open [http://localhost:8081](http://localhost:8081) to view mock API it in the browser.
 Open [http://localhost:3000](http://localhost:3000) to view the front end in the browser.
